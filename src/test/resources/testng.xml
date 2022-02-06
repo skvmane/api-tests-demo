@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Main Suite">
+
+    <listeners>
+        <listener class-name="tests.listeners.TestListener"/>
+        <listener class-name="utils.AnnotationTransformer"/>
+    </listeners>
+
+    <test name="API Tests">
+        <packages>
+            <package name="tests.*"/>
+        </packages>
+    </test>
+
+</suite>
